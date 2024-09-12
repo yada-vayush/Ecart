@@ -11,6 +11,7 @@ const Cart = () => {
     currency,
     removeFromCart,
     updateQuantity,
+    active,
     navigate,
   } = useContext(ShopContext);
 
@@ -77,7 +78,9 @@ const Cart = () => {
           <div className="w-full text-end">
             <button
               className="bg-black text-white text-sm: my-8 px-8 py-3"
-              onClick={() => navigate("/place-order")}
+              onClick={() =>
+                active ? navigate("/place-order") : navigate("/")
+              }
             >
               Procced to Checkout
             </button>

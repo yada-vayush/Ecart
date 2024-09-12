@@ -119,7 +119,7 @@ const Collections = () => {
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Appliance"}
+                value={"Appliances"}
                 onClick={toggleCategory}
               />
               Appliances
@@ -128,7 +128,7 @@ const Collections = () => {
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Mobiles"}
+                value={"Mobile"}
                 onClick={toggleCategory}
               />
               Mobiles
