@@ -12,7 +12,7 @@ const SearchBar = () => {
     if (location.pathname.includes("collections")) setVisible(true);
     else setVisible(false);
   }, [location]);
-  return showSearch && visible ? (
+  return showSearch || visible ? (
     <div className="border-t border-b bg-inherit text-center shadow-md">
       <div className="inline-flex items-center justify-center border border-gray-500 px-5 py-2 my-5 mx-3 rounded-full w-3/4  sm:w-1/2  ">
         <input

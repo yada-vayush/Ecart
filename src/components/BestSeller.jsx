@@ -9,7 +9,9 @@ const BestSeller = () => {
   const [bestSeller, setBestSeller] = useState([]);
 
   useEffect(() => {
-    const bestProduct = products.filter((items) => items.category === "Mobile");
+    const bestProduct = products.filter(
+      (items) => items.category === "Mobiles"
+    );
 
     setBestSeller(bestProduct.slice(0, 5));
   }, []);
