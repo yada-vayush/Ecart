@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 import Title from "../components/Title";
@@ -10,7 +11,7 @@ const Cart = () => {
     cartItems,
     currency,
     removeFromCart,
-    updateQuantity,
+
     active,
     navigate,
   } = useContext(ShopContext);

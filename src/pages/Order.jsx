@@ -3,7 +3,7 @@ import { ShopContext } from "../context/ShopContext";
 import Title from "../components/Title";
 
 const Order = () => {
-  const { products, currency } = useContext(ShopContext);
+  const { products, currency, cartItems } = useContext(ShopContext);
   return (
     <div className="border-t pt-16">
       <div className="text-2xl">
@@ -25,7 +25,7 @@ const Order = () => {
                     {currency}
                     {item.price}
                   </p>
-                  <p> Quantity :1</p>
+                  <p> Quantity :{cartItems[item.id]}</p>
                 </div>
                 <p className="mt-2">
                   Date :<span className="text-gray-700"> 25,August,2024</span>
